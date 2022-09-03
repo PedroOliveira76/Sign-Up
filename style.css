@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+    --Fontsize: 16px;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--Fontsize);
+    
+}
+
+main {
+    width: 100%;
+    height: 70%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec1 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 30%;
+    line-height: 1;
+    align-items: center;
+}
+
+.p {
+    font-size: 1rem;
+    width: 70%;
+}
+
+.sec2 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.floatingbtn {
+    width: 73%;
+    color: rgba(255, 255, 255, 0.885);
+    background-color: var(--Blue);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 12px;
+    font-weight: 400;
+    box-shadow: 1px 5px 2px 1px rgba(0, 0, 0, 0.165);
+    cursor: pointer;
+}
+
+.floatingbtn>span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.containerform {
+    width: 80%;
+    display: flex;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    margin-top: 20px;
+    box-shadow: 1px 7px 2px 1px rgb(0 0 0 / 17%);
+    flex-direction: column;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    align-items: center;
+    padding-top: 1rem;
+   
+}
+
+
+label {
+    position: relative;
+    width: 85%;
+    height: 12%;
+    margin-top: 17px;
+}
+
+.inpt {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #dededede;
+    border-radius: 0.3rem;
+    user-select: none;
+    text-indent: 30px;
+    font-weight: 500;
+}
+
+.inpt::placeholder {
+    color: var(--DarkBlue);
+}
+
+.inpt:focus {
+    outline: none;
+    border: 2px solid var(--Blue);
+}
+
+
+
+.btn-layout {
+    display: flex;
+    width: 85%;
+    height: 15%;
+    margin-top: 20px;
+}
+
+.btn-buy {
+    cursor: pointer;
+    width: 100%;
+    border-style: none;
+    border-radius: 0.3rem;
+    background-color: var(--Green);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-buy:hover{
+    background-color:#77e2b4 ;
+}
+
+.containerform > .myForm > p {
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--GrayishBlue);
+
+}
+
+.containerform>.myForm p>a {
+    color: var(--Red);
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+
+
+@media screen and (max-width: 920px) {
+
+    .h1 {
+        line-height: 1;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+
+    .p {
+        font-size: 0.8rem;
+    }
+
+    .btn-layout {
+        display: flex;
+        width: 85%;
+        height: 15%;
+        margin-top: 20px;
+    }
+
+    .btn-buy {
+        font-size: 10px;
+    }
+
+    .containerform {
+        width: 79%;
+    }
+
+    .floatingbtn {
+        width: 70%;
+
+    }
+
+    .inpt {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    body {
+        height: 140vh;
+        background-image: url('images/bg-intro-mobile.png');
+        background-repeat: repeat-x;
+        background-size: auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        padding: 0;
+    }
+
+    .sec1 {
+        height: 60%;
+    }
+
+    .h1 {
+        text-align: center;
+    }
+
+    .p {
+        text-align: center;
+    }
+
+    .sec2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1400px ){
+    .sec2{
+        height: 80%;
+    }
+
+    .floatingbtn{
+        width: 55%;
+    }
+
+    .containerform{
+        width: 60%;
+    }
+}

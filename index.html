@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <main>
+    <!--Section-Start-->
+    <section class="sec1">
+      <div class="txt">
+        <div class="h1">
+          <h1>Learn to code by watching others</h1>
+        </div>
+        <div class="p">
+          <p>
+            See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Section-End-->
+
+    <!--Section-Start-->
+    <section class="sec2">
+      <div class="floatingbtn">
+        <span>Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+      <div class="containerform">
+        <form action="" class="myForm" id="form">
+          <label for="firstName"><input type="text" id="firstName" class="inpt"  placeholder="First Name" ></label> 
+          <label for="lastName"><input type="text" id="lastName" class="inpt" placeholder="Last Name"></label>
+          <label for="email"><input type="email" id="email" class="inpt" placeholder="Email Address"></label>
+          <label for="password"><input type="password" id="password" class="inpt" placeholder="Password"></label>
+          <div class="btn-layout"><input type="submit" id="btn" onclick="preventSubmit()" value="Claim your free trial" class="btn-buy" id="btn-buy"></div>
+          <p>By clicking the button, you are agreeing to our <a href="index.html">Terms and Services</a></p>
+        </form>
+        
+      </div>
+
+    </section>
+    <!---Section-End-->
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
